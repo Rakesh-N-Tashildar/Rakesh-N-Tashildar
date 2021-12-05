@@ -3,7 +3,7 @@
   "name": "contact-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://Rakesh-N-Tashildar.github.io/first-react-app",
+  "homepage": "http://Rakesh-N-Tashildar/Rakesh-N-Tashildar.github.io",
   "dependencies": {
     "@testing-library/jest-dom": "^5.15.1",
     "@testing-library/react": "^11.2.7",
