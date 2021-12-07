@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.2/dist/chart.min.js"></script>
+       
+    </head>
+    <body>
+        
+        <canvas id="chart" width="600" height="200"></canvas>
+        
+        <script>
+        const xlabels=[];
+        const ytemps=[];
+        charIt();
+
+    async function charIt(){
+        await getData();
+            const ctx = document.getElementById('chart').getContext('2d');
+            
+                        const myChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: xlabels,
+                    datasets: [{
+                        label: 'Oserved-Average-Annual-Mean-Temperature-of-India-for-1901-2020',
+                        data: ytemps,
+                        fill:false,
+                        pointStyle:'circle',
+                        radius:1,
+                        backgroundColor:'rgba(255, 99, 132, 0.2)',               
+                        borderColor:'rgba(255, 99, 132, 1)',                        
+                        borderWidth: 1
+                    }]
+                },
+                    options: {
+                        scales: {
+                            y: {
+                                ticks: {
+                                    // Include a dollar sign in the ticks
+                                    callback: function(value, index, values) {
+                                        return value+'º';
+                                    }
+                                }
+                            }
+                        }
+                    }
+            });
+            }
+//barchart ^
+            
+            async function getData(){
+                const response = await fetch('observed-average-annual-mean-temperature-of-india-for-1901-2020.csv');
+                const data= await response.text();
+                console.log(data);
+
+                const table=data.split('\n').slice(1);
+                table.forEach(row=>{
+                    const column=row.split(',')
+                    const year=column[0];
+                    xlabels.push(year);
+                    const temp=column[1];
+                    ytemps.push(parseFloat(temp));
+                    console.log(year, temp);
+                });
+            }
+        </script>
+    </body>
+</html>
