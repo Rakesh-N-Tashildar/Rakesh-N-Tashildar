@@ -22,11 +22,22 @@
            text-align: center;
        }
        button{
-           background-color:rgb(219, 111, 241);
-           color: white;
-          border: 2px thick black;
-          
+          background-color: white;  /*Green */
+          border:2px thick green;
+          color:#000;
+          padding: 16px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          transition-duration: 0.4s;
+          cursor: pointer;          
        }
+        .button1:hover {
+            background-color: #4CAF50;
+            color: white;
+            }
 
    </style>
 
@@ -37,7 +48,7 @@
         <div>
         
             <h1>Where is Internation Space Station ?</h1>
-            <button onclick="refreshPage()">Click to update the postion of ISS</button>
+            <button class="button1" onclick="refreshPage()">Click to update the postion of ISS</button>
             
             <table>
                 
