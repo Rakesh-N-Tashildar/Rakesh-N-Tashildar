@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+   <style>
+       #issMap{
+           height: 340px;
+       }
+       table, th, td{
+           border: 2px solid black;
+       }
+       table{
+           border-collapse: collapse;
+           width: 50%;
+       }
+       td{
+           text-align: center;
+       }
+       button{
+           background-color:rgb(219, 111, 241);
+           color: white;
+          border: 2px thick black;
+          
+       }
+
+   </style>
+
+    </head>
+    <body>
+        <div id="issMap"></div>
+        
+        <div>
+        
+            <h1>Where is Internation Space Station ?</h1>
+            <button onclick="refreshPage()">Click to update the postion of ISS</button>
+            
+            <table>
+                
+                <tr>
+                    <td><h3>Latitude</h3></td>
+                    <td><span id='lat'> </span></td>
+                </tr>
+                <tr>
+                    <td><h3>Longitude</h3></td>
+                    <td><span id='lon'> </span></td>
+                </tr>
+            </table>
+        <script>
+                function refreshPage(){
+                    window.location.reload();
+                } 
+        </script>
+        
+        
+        <script src="index.js"></script>
+        
+    </div>
+    </body>
+</html>
