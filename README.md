@@ -5,3 +5,6 @@ Password generator:>https://rakesh-n-tashildar.github.io/passwordGen/
 
 
 8/12/2021=>Where is the internation space station now? want to find out click here=>https://rakesh-n-tashildar.github.io/Interantional-space-station-location/
+
+
+16/12/2021=>lets have fun click the link and start playing Sanke_game =>https://rakesh-n-tashildar.github.io/Snake_game/snakegame.html
