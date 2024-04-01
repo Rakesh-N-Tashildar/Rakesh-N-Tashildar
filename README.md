@@ -10,8 +10,5 @@ Password generator:>https://rakesh-n-tashildar.github.io/passwordGen/
 16/12/2021=>lets have fun click the link and start playing Sanke_game =>https://rakesh-n-tashildar.github.io/Snake_game/snakegame.html
 
 
-24/12/2021=>New Year CountDown check out passing each moment=>https://rakesh-n-tashildar.github.io/New_year_countDown/index.html
-
-
 26/12/2021=> CRUD operations =>https://rakesh-n-tashildar.github.io/CRUD_operations/index.html
 
